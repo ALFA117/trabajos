@@ -1,0 +1,1067 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Razones por las que Te Amo, Rebeca 💕</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Playfair+Display:wght@400;700&display=swap');
+
+```
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+        background-size: 400% 400%;
+        animation: gradientShift 15s ease infinite;
+        color: #fff;
+        overflow-x: hidden;
+        min-height: 100vh;
+    }
+    
+    @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    
+    .stars {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+    }
+    
+    .star {
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        background: white;
+        border-radius: 50%;
+        animation: twinkle 3s infinite;
+    }
+    
+    @keyframes twinkle {
+        0%, 100% { opacity: 0; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.5); }
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    header {
+        text-align: center;
+        padding: 60px 20px;
+        animation: fadeInDown 1.5s ease;
+    }
+    
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 4em;
+        font-weight: 700;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
+                     0 0 40px rgba(255, 105, 180, 0.4);
+        margin-bottom: 20px;
+        animation: pulse 2s ease-in-out infinite;
+    }
+    
+    @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+    }
+    
+    .subtitle {
+        font-size: 1.8em;
+        font-weight: 300;
+        margin-bottom: 30px;
+        animation: fadeIn 2s ease;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    
+    .heart-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 30px 0;
+        animation: floatHearts 3s ease-in-out infinite;
+    }
+    
+    @keyframes floatHearts {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+    }
+    
+    .heart {
+        color: #ff69b4;
+        font-size: 3em;
+        animation: heartbeat 1.5s ease-in-out infinite;
+        filter: drop-shadow(0 0 10px rgba(255, 105, 180, 0.8));
+    }
+    
+    @keyframes heartbeat {
+        0%, 100% { transform: scale(1); }
+        25% { transform: scale(1.2); }
+        50% { transform: scale(1); }
+    }
+    
+    .heart:nth-child(2) {
+        animation-delay: 0.3s;
+    }
+    
+    .heart:nth-child(3) {
+        animation-delay: 0.6s;
+    }
+    
+    marquee {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 10px;
+        font-size: 1.3em;
+        font-weight: 600;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    .intro-section {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(20px);
+        border-radius: 30px;
+        padding: 50px;
+        margin: 40px 0;
+        text-align: center;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+        animation: slideInUp 1.5s ease;
+    }
+    
+    @keyframes slideInUp {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .intro-section h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.5em;
+        margin-bottom: 25px;
+        color: #fff;
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    }
+    
+    .intro-section p {
+        font-size: 1.3em;
+        line-height: 1.8;
+        margin-bottom: 20px;
+        font-weight: 300;
+    }
+    
+    .reasons-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        margin: 50px 0;
+    }
+    
+    .reason-card {
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(15px);
+        border-radius: 20px;
+        padding: 30px;
+        border: 2px solid rgba(255, 255, 255, 0.25);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        transition: all 0.4s ease;
+        animation: fadeInScale 0.8s ease backwards;
+    }
+    
+    @keyframes fadeInScale {
+        from {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+    .reason-card:nth-child(1) { animation-delay: 0.1s; }
+    .reason-card:nth-child(2) { animation-delay: 0.2s; }
+    .reason-card:nth-child(3) { animation-delay: 0.3s; }
+    .reason-card:nth-child(4) { animation-delay: 0.4s; }
+    .reason-card:nth-child(5) { animation-delay: 0.5s; }
+    .reason-card:nth-child(6) { animation-delay: 0.6s; }
+    
+    .reason-card:hover {
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0 20px 50px rgba(255, 105, 180, 0.4);
+        border-color: rgba(255, 255, 255, 0.6);
+        background: rgba(255, 255, 255, 0.2);
+    }
+    
+    .reason-number {
+        font-size: 3em;
+        font-weight: 800;
+        color: #ff69b4;
+        text-shadow: 0 0 20px rgba(255, 105, 180, 0.8);
+        margin-bottom: 15px;
+    }
+    
+    .reason-text {
+        font-size: 1.15em;
+        line-height: 1.6;
+        font-weight: 400;
+    }
+    
+    .nickname {
+        color: #ffd700;
+        font-weight: 700;
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+    }
+    
+    .section-divider {
+        text-align: center;
+        margin: 60px 0 40px;
+        animation: fadeIn 2s ease;
+    }
+    
+    .section-divider h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.5em;
+        color: #fff;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        display: inline-block;
+        padding: 20px 40px;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        border-radius: 50px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    .floating-hearts {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 0;
+    }
+    
+    .floating-heart {
+        position: absolute;
+        font-size: 2em;
+        animation: floatUp 10s infinite;
+        opacity: 0;
+    }
+    
+    @keyframes floatUp {
+        0% {
+            opacity: 0;
+            transform: translateY(100vh) rotate(0deg);
+        }
+        10% {
+            opacity: 1;
+        }
+        90% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(-100vh) rotate(360deg);
+        }
+    }
+    
+    .final-message {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(25px);
+        border-radius: 30px;
+        padding: 60px;
+        margin: 60px 0;
+        text-align: center;
+        border: 3px solid rgba(255, 255, 255, 0.4);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        animation: slideInUp 2s ease;
+    }
+    
+    .final-message h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 3em;
+        margin-bottom: 30px;
+        color: #fff;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    }
+    
+    .final-message p {
+        font-size: 1.4em;
+        line-height: 1.9;
+        margin-bottom: 25px;
+        font-weight: 400;
+    }
+    
+    .signature {
+        font-family: 'Playfair Display', serif;
+        font-size: 2em;
+        margin-top: 40px;
+        font-style: italic;
+        color: #ffd700;
+        text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    }
+    
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2.5em;
+        }
+        
+        .reasons-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .intro-section,
+        .final-message {
+            padding: 30px;
+        }
+    }
+    
+    .stray-kids-logo {
+        text-align: center;
+        margin: 30px 0;
+        animation: fadeIn 2s ease;
+    }
+    
+    .sk-text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5em;
+        font-weight: 800;
+        letter-spacing: 5px;
+        background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #f7dc6f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    }
+    
+    .animated-border {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .animated-border::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        animation: borderRotate 3s linear infinite;
+    }
+    
+    @keyframes borderRotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>
+```
+
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+```
+<div class="container">
+    <header>
+        <div class="stray-kids-logo">
+            <div class="sk-text">★ STRAY KIDS EVERYWHERE ALL AROUND THE WORLD ★</div>
+        </div>
+        
+        <h1>💕 REBECA MARTÍNEZ ASCENCIO 💕</h1>
+        
+        <div class="heart-container">
+            <span class="heart">💖</span>
+            <span class="heart">💝</span>
+            <span class="heart">💗</span>
+        </div>
+        
+        <p class="subtitle">100 Razones Por Las Que Te Amo Con Todo Mi Corazón</p>
+    </header>
+    
+    <marquee behavior="scroll" direction="left" scrollamount="8">
+        ✨ Mi Gordis Hermosa ✨ Mi Tortas Adorada ✨ Mi Willgord Perfecta ✨ Mi Mantecas Linda ✨ Mi Amor Eterno ✨
+    </marquee>
+    
+    <div class="intro-section animated-border">
+        <h2>Para Ti, Mi Amor Verdadero 💕</h2>
+        <p>Rebeca, mi <span class="nickname">gordis</span>, mi <span class="nickname">tortas</span>, mi <span class="nickname">willgord</span>, mi <span class="nickname">mantecas</span>... No hay palabras suficientes en este universo para expresar todo lo que siento por ti.</p>
+        <p>Eres la luz que ilumina mis días, la razón de mis sonrisas, y el latido que le da sentido a mi corazón. Cada momento contigo es un regalo que atesoro infinitamente.</p>
+        <p>Aquí te dejo 100 razones por las cuales te amo, aunque en realidad podría escribir millones...</p>
+    </div>
+    
+    <marquee behavior="scroll" direction="right" scrollamount="6">
+        💖 ERES MI TODO 💖 TE AMO MÁS QUE A NADA 💖 MI VIDA ERES TÚ 💖
+    </marquee>
+    
+    <div class="section-divider">
+        <h3>✨ Las Primeras 20 Razones ✨</h3>
+    </div>
+    
+    <div class="reasons-grid">
+        <div class="reason-card">
+            <div class="reason-number">1.</div>
+            <div class="reason-text">Porque tu sonrisa ilumina incluso mis días más oscuros, mi <span class="nickname">amor</span>. Cada vez que sonríes, el mundo entero se detiene.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">2.</div>
+            <div class="reason-text">Porque cuando me miras, <span class="nickname">gordis</span>, siento que soy la persona más importante del universo.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">3.</div>
+            <div class="reason-text">Porque tus abrazos son mi lugar favorito en todo el mundo, mi <span class="nickname">tortas</span> hermosa.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">4.</div>
+            <div class="reason-text">Porque me haces reír hasta que me duele el estómago, <span class="nickname">willgord</span>, y esos son los mejores momentos.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">5.</div>
+            <div class="reason-text">Porque eres la persona más hermosa que he conocido, tanto por dentro como por fuera, mi <span class="nickname">mantecas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">6.</div>
+            <div class="reason-text">Porque entiendes mis silencios y sabes exactamente lo que necesito sin que tenga que decir nada.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">7.</div>
+            <div class="reason-text">Porque tu voz es mi canción favorita, <span class="nickname">amor</span>, y nunca me canso de escucharla.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">8.</div>
+            <div class="reason-text">Porque me apoyas en cada sueño y meta que tengo, mi <span class="nickname">gordis</span> perfecta.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">9.</div>
+            <div class="reason-text">Porque eres la primera persona en la que pienso al despertar y la última antes de dormir.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">10.</div>
+            <div class="reason-text">Porque tu corazón es el más noble y bondadoso que existe, <span class="nickname">tortas</span> de mi vida.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">11.</div>
+            <div class="reason-text">Porque me haces querer ser una mejor persona cada día, mi <span class="nickname">willgord</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">12.</div>
+            <div class="reason-text">Porque tus ojos tienen el brillo de mil estrellas y me pierdo en ellos cada vez que te miro.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">13.</div>
+            <div class="reason-text">Porque tu forma de ser tan auténtica y genuina me enamora más cada día, <span class="nickname">mantecas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">14.</div>
+            <div class="reason-text">Porque contigo aprendí lo que significa amar de verdad, sin condiciones ni límites.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">15.</div>
+            <div class="reason-text">Porque tus besos son la mejor medicina para cualquier mal que pueda tener, mi <span class="nickname">amor</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">16.</div>
+            <div class="reason-text">Porque me aceptas tal y como soy, con todos mis defectos y virtudes, <span class="nickname">gordis</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">17.</div>
+            <div class="reason-text">Porque tu inteligencia y manera de ver el mundo me fascinan completamente.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">18.</div>
+            <div class="reason-text">Porque eres mi mejor amiga, mi confidente, mi cómplice y mi amor eterno, <span class="nickname">tortas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">19.</div>
+            <div class="reason-text">Porque cuando estoy contigo, el tiempo se detiene y solo existimos tú y yo, mi <span class="nickname">willgord</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">20.</div>
+            <div class="reason-text">Porque tu presencia en mi vida le da color a todo lo que hago y experimento.</div>
+        </div>
+    </div>
+    
+    <marquee behavior="scroll" direction="left" scrollamount="10">
+        🌟 ERES MI ESTRELLA 🌟 MI RAZÓN DE VIVIR 🌟 MI SUEÑO HECHO REALIDAD 🌟
+    </marquee>
+    
+    <div class="section-divider">
+        <h3>💫 Razones 21 a 40 💫</h3>
+    </div>
+    
+    <div class="reasons-grid">
+        <div class="reason-card">
+            <div class="reason-number">21.</div>
+            <div class="reason-text">Porque me enseñaste que el amor verdadero sí existe, <span class="nickname">mantecas</span> hermosa.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">22.</div>
+            <div class="reason-text">Porque tu risa es contagiosa y alegra hasta el corazón más triste.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">23.</div>
+            <div class="reason-text">Porque eres fuerte, valiente y capaz de conquistar cualquier cosa que te propongas, mi <span class="nickname">amor</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">24.</div>
+            <div class="reason-text">Porque tu forma de cuidarme demuestra un amor tan puro y sincero, <span class="nickname">gordis</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">25.</div>
+            <div class="reason-text">Porque cada conversación contigo es especial, sin importar de qué hablemos.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">26.</div>
+            <div class="reason-text">Porque tus sueños son mis sueños, y quiero estar a tu lado mientras los cumples, mi <span class="nickname">tortas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">27.</div>
+            <div class="reason-text">Porque me haces sentir seguro, amado y valorado cada segundo del día.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">28.</div>
+            <div class="reason-text">Porque tu forma de ser tan tierna y dulce derrite mi corazón, <span class="nickname">willgord</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">29.</div>
+            <div class="reason-text">Porque contigo descubrí que el hogar no es un lugar, sino una persona.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">30.</div>
+            <div class="reason-text">Porque tu pasión por las cosas que amas me inspira a dar lo mejor de mí, <span class="nickname">mantecas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">31.</div>
+            <div class="reason-text">Porque me perdonas cuando cometo errores y me ayudas a crecer, mi <span class="nickname">amor</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">32.</div>
+            <div class="reason-text">Porque tu belleza va más allá de lo físico, brillas desde el alma, <span class="nickname">gordis</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">33.</div>
+            <div class="reason-text">Porque tus pequeños gestos de amor significan el mundo entero para mí.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">34.</div>
+            <div class="reason-text">Porque eres la paz en medio de mis tormentas, mi <span class="nickname">tortas</span> adorada.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">35.</div>
+            <div class="reason-text">Porque me haces sentir que juntos podemos conquistar el mundo.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">36.</div>
+            <div class="reason-text">Porque tu amor me ha transformado en alguien mejor, <span class="nickname">willgord</span> preciosa.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">37.</div>
+            <div class="reason-text">Porque compartir mi vida contigo es el mayor privilegio que tengo.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">38.</div>
+            <div class="reason-text">Porque tu forma de amar es única, especial e incomparable, <span class="nickname">mantecas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">39.</div>
+            <div class="reason-text">Porque me haces creer en los finales felices y en el para siempre.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">40.</div>
+            <div class="reason-text">Porque eres mi persona favorita en todo el universo, mi <span class="nickname">amor</span> eterno.</div>
+        </div>
+    </div>
+    
+    <marquee behavior="scroll" direction="right" scrollamount="7">
+        💝 MI GORDIS HERMOSA 💝 MI TORTAS ADORADA 💝 MI WILLGORD PERFECTA 💝 MI MANTECAS LINDA 💝
+    </marquee>
+    
+    <div class="section-divider">
+        <h3>🌸 Razones 41 a 60 🌸</h3>
+    </div>
+    
+    <div class="reasons-grid">
+        <div class="reason-card">
+            <div class="reason-number">41.</div>
+            <div class="reason-text">Porque tu forma de bailar, aunque sea en casa, me llena de felicidad, <span class="nickname">gordis</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">42.</div>
+            <div class="reason-text">Porque cuando me abrazas, todos mis problemas desaparecen instantáneamente.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">43.</div>
+            <div class="reason-text">Porque tu valentía ante los desafíos de la vida me inspira cada día, mi <span class="nickname">tortas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">44.</div>
+            <div class="reason-text">Porque me enseñaste que amar es también crecer juntos y apoyarnos mutuamente.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">45.</div>
+            <div class="reason-text">Porque tu energía positiva ilumina cada espacio al que llegas, <span class="nickname">willgord</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">46.</div>
+            <div class="reason-text">Porque tus ideas creativas y tu imaginación me fascinan completamente.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">47.</div>
+            <div class="reason-text">Porque me haces sentir amado de una manera que nunca había experimentado, <span class="nickname">mantecas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">48.</div>
+            <div class="reason-text">Porque tu lealtad y compromiso conmigo son invaluables, mi <span class="nickname">amor</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">49.</div>
+            <div class="reason-text">Porque celebras mis logros como si fueran tuyos, <span class="nickname">gordis</span> hermosa.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">50.</div>
+            <div class="reason-text">Porque tu forma de cocinar con amor hace que todo sepa delicioso.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">51.</div>
+            <div class="reason-text">Porque me haces sentir que soy capaz de todo cuando estás a mi lado, <span class="nickname">tortas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">52.</div>
+            <div class="reason-text">Porque tu paciencia conmigo es infinita y admirable, mi <span class="nickname">willgord</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">53.</div>
+            <div class="reason-text">Porque cada día contigo es una nueva aventura llena de amor y sorpresas.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">54.</div>
+            <div class="reason-text">Porque tu forma de preocuparte por mí demuestra un amor tan genuino, <span class="nickname">mantecas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">55.</div>
+            <div class="reason-text">Porque me haces reír incluso cuando quiero estar serio, mi <span class="nickname">amor</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">56.</div>
+            <div class="reason-text">Porque tu generosidad y bondad no tienen límites, <span class="nickname">gordis</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">57.</div>
+            <div class="reason-text">Porque contigo aprendí que el amor verdadero es paciente y comprensivo.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">58.</div>
+            <div class="reason-text">Porque tu forma de ser tan espontánea me mantiene siempre enamorado, <span class="nickname">tortas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">59.</div>
+            <div class="reason-text">Porque me entiendes mejor que nadie en este mundo, mi <span class="nickname">willgord</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">60.</div>
+            <div class="reason-text">Porque eres mi motivación para despertar cada mañana con una sonrisa.</div>
+        </div>
+    </div>
+    
+    <marquee behavior="scroll" direction="left" scrollamount="9">
+        🌺 TE AMO REBECA 🌺 ERES MI VIDA ENTERA 🌺 MI GORDIS PERFECTA 🌺 MI TORTAS HERMOSA 🌺
+    </marquee>
+    
+    <div class="section-divider">
+        <h3>🌟 Razones 61 a 80 🌟</h3>
+    </div>
+    
+    <div class="reasons-grid">
+        <div class="reason-card">
+            <div class="reason-number">61.</div>
+            <div class="reason-text">Porque tu empatía hacia los demás refleja la belleza de tu alma, <span class="nickname">mantecas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">62.</div>
+            <div class="reason-text">Porque me haces sentir único y especial todos los días, mi <span class="nickname">amor</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">63.</div>
+            <div class="reason-text">Porque tu determinación para alcanzar tus metas me llena de orgullo, <span class="nickname">gordis</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">64.</div>
+            <div class="reason-text">Porque tus palabras de aliento me dan fuerza cuando más lo necesito.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">65.</div>
+            <div class="reason-text">Porque compartir momentos simples contigo es extraordinario, mi <span class="nickname">tortas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">66.</div>
+            <div class="reason-text">Porque tu honestidad y transparencia fortalecen nuestra relación cada día.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">67.</div>
+            <div class="reason-text">Porque me haces creer en la magia y en los milagros, <span class="nickname">willgord</span> preciosa.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">68.</div>
+            <div class="reason-text">Porque tu presencia convierte lo ordinario en extraordinario, <span class="nickname">mantecas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">69.</div>
+            <div class="reason-text">Porque me amas con mis imperfecciones y me ayudas a mejorar, mi <span class="nickname">amor</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">70.</div>
+            <div class="reason-text">Porque tu optimismo ilumina incluso los momentos más difíciles, <span class="nickname">gordis</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">71.</div>
+            <div class="reason-text">Porque eres mi lugar seguro donde puedo ser completamente yo mismo.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">72.</div>
+            <div class="reason-text">Porque tu creatividad y talento me dejan sin palabras, mi <span class="nickname">tortas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">73.</div>
+            <div class="reason-text">Porque me haces sentir que el futuro es brillante y lleno de posibilidades.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">74.</div>
+            <div class="reason-text">Porque tu forma de cuidar los detalles demuestra cuánto te importo, <span class="nickname">willgord</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">75.</div>
+            <div class="reason-text">Porque eres la respuesta a todas las oraciones que hice, <span class="nickname">mantecas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">76.</div>
+            <div class="reason-text">Porque tu amor me ha enseñado a ser más compasivo y comprensivo, mi <span class="nickname">amor</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">77.</div>
+            <div class="reason-text">Porque cada recuerdo contigo es un tesoro que guardo en mi corazón, <span class="nickname">gordis</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">78.</div>
+            <div class="reason-text">Porque me inspiras a perseguir mis sueños con pasión y dedicación.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">79.</div>
+            <div class="reason-text">Porque tu forma de amarme es la más pura y sincera que existe, mi <span class="nickname">tortas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">80.</div>
+            <div class="reason-text">Porque contigo descubrí que el amor verdadero supera cualquier obstáculo.</div>
+        </div>
+    </div>
+    
+    <marquee behavior="scroll" direction="right" scrollamount="8">
+        💕 MI WILLGORD ADORADA 💕 MI MANTECAS PRECIOSA 💕 ERES MI UNIVERSO COMPLETO 💕
+    </marquee>
+    
+    <div class="section-divider">
+        <h3>💖 Razones 81 a 100 💖</h3>
+    </div>
+    
+    <div class="reasons-grid">
+        <div class="reason-card">
+            <div class="reason-number">81.</div>
+            <div class="reason-text">Porque tu forma de reír hace que mi corazón salte de alegría, <span class="nickname">willgord</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">82.</div>
+            <div class="reason-text">Porque me haces sentir completo, como si hubiera encontrado mi otra mitad, <span class="nickname">mantecas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">83.</div>
+            <div class="reason-text">Porque tu amor me da la valentía para enfrentar cualquier desafío, mi <span class="nickname">amor</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">84.</div>
+            <div class="reason-text">Porque eres mi inspiración diaria para ser la mejor versión de mí mismo, <span class="nickname">gordis</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">85.</div>
+            <div class="reason-text">Porque tu forma de verme con amor hace que me sienta el hombre más afortunado del mundo.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">86.</div>
+            <div class="reason-text">Porque cada momento sin ti me hace extrañarte infinitamente, mi <span class="nickname">tortas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">87.</div>
+            <div class="reason-text">Porque tu sabiduría y consejos me guían en los momentos difíciles, <span class="nickname">willgord</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">88.</div>
+            <div class="reason-text">Porque me haces creer que juntos podemos crear nuestro propio paraíso, <span class="nickname">mantecas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">89.</div>
+            <div class="reason-text">Porque tu amor es el regalo más hermoso que la vida me ha dado, mi <span class="nickname">amor</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">90.</div>
+            <div class="reason-text">Porque eres la persona con la que quiero compartir cada amanecer y atardecer, <span class="nickname">gordis</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">91.</div>
+            <div class="reason-text">Porque tu fuerza interior me inspira a nunca rendirme, mi <span class="nickname">tortas</span> valiente.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">92.</div>
+            <div class="reason-text">Porque me haces sentir que el amor de películas y canciones sí existe en la vida real.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">93.</div>
+            <div class="reason-text">Porque tu esencia única e irrepetible me tiene completamente enamorado, <span class="nickname">willgord</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">94.</div>
+            <div class="reason-text">Porque contigo aprendí que amar es también respetar, valorar y admirar, <span class="nickname">mantecas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">95.</div>
+            <div class="reason-text">Porque eres mi compañera de vida, mi confidente y mi gran amor, mi <span class="nickname">amor</span> eterno.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">96.</div>
+            <div class="reason-text">Porque tu amor me hace sentir invencible y capaz de conquistar el mundo, <span class="nickname">gordis</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">97.</div>
+            <div class="reason-text">Porque cada latido de mi corazón lleva tu nombre grabado, Rebeca Martínez Ascencio.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">98.</div>
+            <div class="reason-text">Porque me haces creer en el para siempre y en los finales felices, mi <span class="nickname">tortas</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">99.</div>
+            <div class="reason-text">Porque simplemente eres TÚ, perfecta en tu imperfección, única e irremplazable, <span class="nickname">willgord</span>.</div>
+        </div>
+        
+        <div class="reason-card">
+            <div class="reason-number">100.</div>
+            <div class="reason-text">Porque te amo con cada fibra de mi ser, con cada pensamiento, con cada respiración. Eres mi TODO, mi <span class="nickname">mantecas</span>, mi <span class="nickname">gordis</span>, mi <span class="nickname">tortas</span>, mi <span class="nickname">willgord</span>, mi <span class="nickname">AMOR</span> eterno. ¡TE AMO INFINITAMENTE, REBECA! 💖</div>
+        </div>
+    </div>
+    
+    <marquee behavior="scroll" direction="left" scrollamount="10">
+        ✨💖✨ REBECA MARTÍNEZ ASCENCIO ✨💖✨ ERES EL AMOR DE MI VIDA ✨💖✨ TE AMO INFINITAMENTE ✨💖✨
+    </marquee>
+    
+    <div class="final-message">
+        <h2>Mi Amor Eterno 💕</h2>
+        <p>Rebeca, mi <span class="nickname">gordis</span> hermosa, mi <span class="nickname">tortas</span> adorada, mi <span class="nickname">willgord</span> perfecta, mi <span class="nickname">mantecas</span> linda...</p>
+        <p>Estas 100 razones son apenas una pequeña muestra de todo lo que siento por ti. En realidad, podría escribir millones de razones porque cada día me enamoro más de ti.</p>
+        <p>Eres la luz que ilumina mi camino, la razón de mi felicidad, y la dueña absoluta de mi corazón. Gracias por existir, por amarme, por estar a mi lado y por hacer de mi vida algo extraordinario.</p>
+        <p>Te prometo amarte hoy, mañana y siempre. Voy a cuidarte, respetarte, valorarte y demostrarte cada día lo importante que eres para mí.</p>
+        <p>Eres mi sueño hecho realidad, mi alma gemela, mi para siempre.</p>
+        <p class="signature">Con todo mi amor, para siempre tuyo 💖</p>
+        <div class="heart-container">
+            <span class="heart">💖</span>
+            <span class="heart">💝</span>
+            <span class="heart">💗</span>
+            <span class="heart">💕</span>
+            <span class="heart">💞</span>
+        </div>
+    </div>
+    
+    <marquee behavior="scroll" direction="right" scrollamount="7">
+        🌟 TE AMO REBECA 🌟 MI GORDIS 🌟 MI TORTAS 🌟 MI WILLGORD 🌟 MI MANTECAS 🌟 MI AMOR ETERNO 🌟
+    </marquee>
+</div>
+
+<script>
+    // Crear estrellas
+    const starsContainer = document.getElementById('stars');
+    for (let i = 0; i < 100; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+        star.style.left = Math.random() * 100 + '%';
+        star.style.top = Math.random() * 100 + '%';
+        star.style.animationDelay = Math.random() * 3 + 's';
+        starsContainer.appendChild(star);
+    }
+    
+    // Crear corazones flotantes
+    const floatingHeartsContainer = document.getElementById('floatingHearts');
+    const heartSymbols = ['💖', '💝', '💗', '💕', '💞', '❤️', '💓'];
+    
+    function createFloatingHeart() {
+        const heart = document.createElement('div');
+        heart.className = 'floating-heart';
+        heart.textContent = heartSymbols[Math.floor(Math.random() * heartSymbols.length)];
+        heart.style.left = Math.random() * 100 + '%';
+        heart.style.animationDuration = (Math.random() * 5 + 8) + 's';
+        heart.style.animationDelay = Math.random() * 5 + 's';
+        floatingHeartsContainer.appendChild(heart);
+        
+        setTimeout(() => {
+            heart.remove();
+        }, 15000);
+    }
+    
+    // Crear corazones continuamente
+    setInterval(createFloatingHeart, 500);
+    
+    // Crear corazones iniciales
+    for (let i = 0; i < 20; i++) {
+        setTimeout(createFloatingHeart, i * 250);
+    }
+    
+    // Animación de las tarjetas al hacer scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+    
+    document.querySelectorAll('.reason-card').forEach(card => {
+        observer.observe(card);
+    });
+</script>
+```
